@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %} Home Page {% endblock %}
+{% block page_name %} Madlibs {% endblock %}
+
+
+{% block content %}
+<h1>Madlibs</h1>
+<p>Fill in the form below and submit for a fun story!</p>
+
+<form action="/story">
+    <p>
+        <label for="place">Place: </label>
+        <input id="place" type="text" placeholder="Enter a place" name="place">
+    </p>
+    <p>
+        <label for="noun">Noun: </label>
+        <input type="text" placeholder="Enter a noun" name="noun">
+    </p>
+    <p>
+        <label for="verb">Verb: </label>
+        <input type="text" placeholder="Enter a verb" name="verb">
+    </p>
+    <p>
+        <label for="adjective">Adjective: </label>
+        <input type="text" placeholder="Enter an adjective" name="adjective">
+    </p>
+    <p>
+        <label for="plural_noun">Plural Noun: </label>
+        <input type="text" placeholder="Enter a plural noun" name="plural_noun">
+    </p>
+    <button>Submit</button>
+</form>
+
+{% endblock %}
